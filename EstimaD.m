@@ -1,6 +1,7 @@
 function [ alpha ] = EstimaD( U )
 %UNTITLED2 Summary of this function goes here
 %   Detailed explanation goes here
+
 [m,n]=size(U);
 for i=1:m
  g(i,:)=fair(U(i,:));   
