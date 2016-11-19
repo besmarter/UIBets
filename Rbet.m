@@ -1,10 +1,10 @@
 function [ bet ] = Rbet(u, HO,DO,AO,g,em,per )
-    rng(42)
+    %rng(42)
     ue=[HO DO AO ];
     % g son los partidos ganados
     % em partidos empatados
    % per son los partidos perdidos
-    p=simulaPTrinarios(u,g,em,per,100000);
+    p=simulaPTrinarios(u,g,em,per,1);
     S(1)=(p(1)*ue(1)-1)/(ue(1)-1);
     S(2)=(p(2)*ue(2)-1)/(ue(2)-1);
     S(3)=(p(3)*ue(3)-1)/(ue(3)-1);
